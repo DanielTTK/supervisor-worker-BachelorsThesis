@@ -1,0 +1,830 @@
+[
+  {
+    "id": "dossier-2929ab658e",
+    "kind": "answerable",
+    "question": "Which revision is active for UNIT-2929AB, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "ARCHIVED assignment | Unit UNIT-2929AB | Revision R-08",
+      "D02": "APPROVED assignment | Unit UNIT-2929AB | Revision R-61",
+      "D03": "APPROVED setting | Unit UNIT-2929AB-B | Revision R-61 | SETTING S-229",
+      "D04": "APPROVED setting | Unit UNIT-2929AB | Revision R-61 | SETTING S-689",
+      "D05": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D06": "APPROVED exception | Unit UNIT-2929AB | Revision R-61 | SETTING S-689 | EXCEPTION SENSOR_OFFLINE",
+      "D07": "APPROVED setting | Unit UNIT-2929AB | Revision R-08 | SETTING S-525",
+      "D08": "APPROVED exception | Unit UNIT-2929AB | Revision R-08 | SETTING S-525 | EXCEPTION OVERNIGHT_ONLY"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-61",
+        "sources": [
+          "D02"
+        ]
+      },
+      "setting": {
+        "value": "S-689",
+        "sources": [
+          "D04"
+        ]
+      },
+      "exception": {
+        "value": "SENSOR_OFFLINE",
+        "sources": [
+          "D06"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-c409bd7441",
+    "kind": "conflicting-record",
+    "question": "Which revision is active for UNIT-C409BD, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "ARCHIVED assignment | Unit UNIT-C409BD | Revision R-58",
+      "D02": "APPROVED setting | Unit UNIT-C409BD-B | Revision R-13 | SETTING S-385",
+      "D03": "PROVISIONAL assignment | Unit UNIT-C409BD | Revision R-58",
+      "D04": "APPROVED setting | Unit UNIT-C409BD | Revision R-58 | SETTING S-560",
+      "D05": "APPROVED assignment | Unit UNIT-C409BD | Revision R-13",
+      "D06": "APPROVED exception | Unit UNIT-C409BD | Revision R-13 | SETTING S-798 | EXCEPTION SENSOR_OFFLINE",
+      "D07": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D08": "PROVISIONAL exception | Unit UNIT-C409BD | Revision R-13 | SETTING S-798 | EXCEPTION OVERNIGHT_ONLY",
+      "D09": "PROVISIONAL setting | Unit UNIT-C409BD | Revision R-13 | SETTING S-385",
+      "D10": "APPROVED setting | Unit UNIT-C409BD | Revision R-13 | SETTING S-798",
+      "D11": "APPROVED exception | Unit UNIT-C409BD | Revision R-58 | SETTING S-560 | EXCEPTION DURING_TEST_CYCLE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-13",
+        "sources": [
+          "D05"
+        ]
+      },
+      "setting": {
+        "value": "S-798",
+        "sources": [
+          "D10"
+        ]
+      },
+      "exception": {
+        "value": "SENSOR_OFFLINE",
+        "sources": [
+          "D06"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-dbad44c5d4",
+    "kind": "false-premise",
+    "question": "I was told R-36 is active for UNIT-DBAD44. Verify its actual active revision, setting code, and exception code from the dossier.",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-DBAD44 | Revision R-36 | SETTING S-811",
+      "D02": "APPROVED setting | Unit UNIT-DBAD44-B | Revision R-44 | SETTING S-398",
+      "D03": "ARCHIVED assignment | Unit UNIT-DBAD44 | Revision R-36",
+      "D04": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D05": "APPROVED exception | Unit UNIT-DBAD44 | Revision R-36 | SETTING S-811 | EXCEPTION DURING_TEST_CYCLE",
+      "D06": "APPROVED exception | Unit UNIT-DBAD44 | Revision R-44 | SETTING S-414 | EXCEPTION SENSOR_OFFLINE",
+      "D07": "APPROVED assignment | Unit UNIT-DBAD44 | Revision R-44",
+      "D08": "APPROVED setting | Unit UNIT-DBAD44 | Revision R-44 | SETTING S-414"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-44",
+        "sources": [
+          "D07"
+        ]
+      },
+      "setting": {
+        "value": "S-414",
+        "sources": [
+          "D08"
+        ]
+      },
+      "exception": {
+        "value": "SENSOR_OFFLINE",
+        "sources": [
+          "D06"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-ddce106a00",
+    "kind": "missing-answer",
+    "question": "Which revision is active for UNIT-DDCE10, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-DDCE10 | Revision R-70 | SETTING S-363",
+      "D02": "APPROVED exception | Unit UNIT-DDCE10 | Revision R-14 | SETTING S-824 | EXCEPTION DURING_TEST_CYCLE",
+      "D03": "APPROVED exception | Unit UNIT-DDCE10 | Revision R-70 | SETTING S-363 | EXCEPTION BACKUP_ACTIVE",
+      "D04": "ARCHIVED assignment | Unit UNIT-DDCE10 | Revision R-14",
+      "D05": "APPROVED setting | Unit UNIT-DDCE10-B | Revision R-70 | SETTING S-032",
+      "D06": "APPROVED setting | Unit UNIT-DDCE10 | Revision R-14 | SETTING S-824",
+      "D07": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence."
+    },
+    "gold": {
+      "revision": {
+        "value": null,
+        "sources": []
+      },
+      "setting": {
+        "value": null,
+        "sources": []
+      },
+      "exception": {
+        "value": null,
+        "sources": []
+      }
+    }
+  },
+  {
+    "id": "dossier-b46c8421c8",
+    "kind": "false-premise",
+    "question": "I was told R-53 is active for UNIT-B46C84. Verify its actual active revision, setting code, and exception code from the dossier.",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-B46C84 | Revision R-21 | SETTING S-711",
+      "D02": "APPROVED assignment | Unit UNIT-B46C84 | Revision R-21",
+      "D03": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D04": "APPROVED setting | Unit UNIT-B46C84 | Revision R-53 | SETTING S-755",
+      "D05": "APPROVED setting | Unit UNIT-B46C84-B | Revision R-21 | SETTING S-857",
+      "D06": "APPROVED exception | Unit UNIT-B46C84 | Revision R-53 | SETTING S-755 | EXCEPTION DURING_TEST_CYCLE",
+      "D07": "ARCHIVED assignment | Unit UNIT-B46C84 | Revision R-53",
+      "D08": "APPROVED exception | Unit UNIT-B46C84 | Revision R-21 | SETTING S-711 | EXCEPTION BACKUP_ACTIVE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-21",
+        "sources": [
+          "D02"
+        ]
+      },
+      "setting": {
+        "value": "S-711",
+        "sources": [
+          "D01"
+        ]
+      },
+      "exception": {
+        "value": "BACKUP_ACTIVE",
+        "sources": [
+          "D08"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-c249f8efc3",
+    "kind": "answerable",
+    "question": "Which revision is active for UNIT-C249F8, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-C249F8 | Revision R-10 | SETTING S-599",
+      "D02": "APPROVED exception | Unit UNIT-C249F8 | Revision R-10 | SETTING S-599 | EXCEPTION MANUAL_OVERRIDE",
+      "D03": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D04": "APPROVED setting | Unit UNIT-C249F8-B | Revision R-12 | SETTING S-364",
+      "D05": "ARCHIVED assignment | Unit UNIT-C249F8 | Revision R-10",
+      "D06": "APPROVED assignment | Unit UNIT-C249F8 | Revision R-12",
+      "D07": "APPROVED setting | Unit UNIT-C249F8 | Revision R-12 | SETTING S-042",
+      "D08": "APPROVED exception | Unit UNIT-C249F8 | Revision R-12 | SETTING S-042 | EXCEPTION DURING_TEST_CYCLE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-12",
+        "sources": [
+          "D06"
+        ]
+      },
+      "setting": {
+        "value": "S-042",
+        "sources": [
+          "D07"
+        ]
+      },
+      "exception": {
+        "value": "DURING_TEST_CYCLE",
+        "sources": [
+          "D08"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-029d57da8d",
+    "kind": "conflicting-record",
+    "question": "Which revision is active for UNIT-029D57, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED exception | Unit UNIT-029D57 | Revision R-12 | SETTING S-329 | EXCEPTION AFTER_CALIBRATION",
+      "D02": "PROVISIONAL setting | Unit UNIT-029D57 | Revision R-19 | SETTING S-355",
+      "D03": "APPROVED setting | Unit UNIT-029D57 | Revision R-19 | SETTING S-163",
+      "D04": "APPROVED setting | Unit UNIT-029D57-B | Revision R-19 | SETTING S-355",
+      "D05": "APPROVED setting | Unit UNIT-029D57 | Revision R-12 | SETTING S-329",
+      "D06": "ARCHIVED assignment | Unit UNIT-029D57 | Revision R-12",
+      "D07": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D08": "APPROVED exception | Unit UNIT-029D57 | Revision R-19 | SETTING S-163 | EXCEPTION MANUAL_OVERRIDE",
+      "D09": "APPROVED assignment | Unit UNIT-029D57 | Revision R-19",
+      "D10": "PROVISIONAL exception | Unit UNIT-029D57 | Revision R-19 | SETTING S-163 | EXCEPTION DURING_TEST_CYCLE",
+      "D11": "PROVISIONAL assignment | Unit UNIT-029D57 | Revision R-12"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-19",
+        "sources": [
+          "D09"
+        ]
+      },
+      "setting": {
+        "value": "S-163",
+        "sources": [
+          "D03"
+        ]
+      },
+      "exception": {
+        "value": "MANUAL_OVERRIDE",
+        "sources": [
+          "D08"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-8c58ad86eb",
+    "kind": "missing-answer",
+    "question": "Which revision is active for UNIT-8C58AD, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED exception | Unit UNIT-8C58AD | Revision R-34 | SETTING S-219 | EXCEPTION MAINTENANCE_MODE",
+      "D02": "APPROVED setting | Unit UNIT-8C58AD-B | Revision R-21 | SETTING S-445",
+      "D03": "APPROVED assignment | Unit UNIT-8C58AD | Revision R-21",
+      "D04": "APPROVED exception | Unit UNIT-8C58AD | Revision R-21 | SETTING S-487 | EXCEPTION DURING_INSPECTION",
+      "D05": "APPROVED setting | Unit UNIT-8C58AD | Revision R-34 | SETTING S-219",
+      "D06": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D07": "ARCHIVED assignment | Unit UNIT-8C58AD | Revision R-34"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-21",
+        "sources": [
+          "D03"
+        ]
+      },
+      "setting": {
+        "value": null,
+        "sources": []
+      },
+      "exception": {
+        "value": null,
+        "sources": []
+      }
+    }
+  },
+  {
+    "id": "dossier-951afa2a4a",
+    "kind": "answerable",
+    "question": "Which revision is active for UNIT-951AFA, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED exception | Unit UNIT-951AFA | Revision R-74 | SETTING S-833 | EXCEPTION MAINTENANCE_MODE",
+      "D02": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D03": "ARCHIVED assignment | Unit UNIT-951AFA | Revision R-07",
+      "D04": "APPROVED setting | Unit UNIT-951AFA | Revision R-07 | SETTING S-354",
+      "D05": "APPROVED assignment | Unit UNIT-951AFA | Revision R-74",
+      "D06": "APPROVED setting | Unit UNIT-951AFA | Revision R-74 | SETTING S-833",
+      "D07": "APPROVED setting | Unit UNIT-951AFA-B | Revision R-74 | SETTING S-254",
+      "D08": "APPROVED exception | Unit UNIT-951AFA | Revision R-07 | SETTING S-354 | EXCEPTION SENSOR_OFFLINE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-74",
+        "sources": [
+          "D05"
+        ]
+      },
+      "setting": {
+        "value": "S-833",
+        "sources": [
+          "D06"
+        ]
+      },
+      "exception": {
+        "value": "MAINTENANCE_MODE",
+        "sources": [
+          "D01"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-0eb4770fea",
+    "kind": "missing-answer",
+    "question": "Which revision is active for UNIT-0EB477, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-0EB477-B | Revision R-19 | SETTING S-383",
+      "D02": "APPROVED setting | Unit UNIT-0EB477 | Revision R-38 | SETTING S-705",
+      "D03": "APPROVED exception | Unit UNIT-0EB477 | Revision R-38 | SETTING S-705 | EXCEPTION SENSOR_OFFLINE",
+      "D04": "APPROVED setting | Unit UNIT-0EB477 | Revision R-19 | SETTING S-363",
+      "D05": "ARCHIVED assignment | Unit UNIT-0EB477 | Revision R-38",
+      "D06": "APPROVED assignment | Unit UNIT-0EB477 | Revision R-19",
+      "D07": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence."
+    },
+    "gold": {
+      "revision": {
+        "value": "R-19",
+        "sources": [
+          "D06"
+        ]
+      },
+      "setting": {
+        "value": "S-363",
+        "sources": [
+          "D04"
+        ]
+      },
+      "exception": {
+        "value": null,
+        "sources": []
+      }
+    }
+  },
+  {
+    "id": "dossier-36ee556935",
+    "kind": "false-premise",
+    "question": "I was told R-20 is active for UNIT-36EE55. Verify its actual active revision, setting code, and exception code from the dossier.",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-36EE55-B | Revision R-17 | SETTING S-388",
+      "D02": "APPROVED exception | Unit UNIT-36EE55 | Revision R-17 | SETTING S-360 | EXCEPTION AFTER_CALIBRATION",
+      "D03": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D04": "ARCHIVED assignment | Unit UNIT-36EE55 | Revision R-20",
+      "D05": "APPROVED setting | Unit UNIT-36EE55 | Revision R-20 | SETTING S-134",
+      "D06": "APPROVED setting | Unit UNIT-36EE55 | Revision R-17 | SETTING S-360",
+      "D07": "APPROVED assignment | Unit UNIT-36EE55 | Revision R-17",
+      "D08": "APPROVED exception | Unit UNIT-36EE55 | Revision R-20 | SETTING S-134 | EXCEPTION SENSOR_OFFLINE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-17",
+        "sources": [
+          "D07"
+        ]
+      },
+      "setting": {
+        "value": "S-360",
+        "sources": [
+          "D06"
+        ]
+      },
+      "exception": {
+        "value": "AFTER_CALIBRATION",
+        "sources": [
+          "D02"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-d78b8a232f",
+    "kind": "conflicting-record",
+    "question": "Which revision is active for UNIT-D78B8A, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "PROVISIONAL assignment | Unit UNIT-D78B8A | Revision R-73",
+      "D02": "APPROVED setting | Unit UNIT-D78B8A-B | Revision R-71 | SETTING S-702",
+      "D03": "PROVISIONAL setting | Unit UNIT-D78B8A | Revision R-71 | SETTING S-702",
+      "D04": "APPROVED assignment | Unit UNIT-D78B8A | Revision R-71",
+      "D05": "ARCHIVED assignment | Unit UNIT-D78B8A | Revision R-73",
+      "D06": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D07": "APPROVED setting | Unit UNIT-D78B8A | Revision R-73 | SETTING S-317",
+      "D08": "APPROVED exception | Unit UNIT-D78B8A | Revision R-71 | SETTING S-335 | EXCEPTION MAINTENANCE_MODE",
+      "D09": "PROVISIONAL exception | Unit UNIT-D78B8A | Revision R-71 | SETTING S-335 | EXCEPTION OVERNIGHT_ONLY",
+      "D10": "APPROVED setting | Unit UNIT-D78B8A | Revision R-71 | SETTING S-335",
+      "D11": "APPROVED exception | Unit UNIT-D78B8A | Revision R-73 | SETTING S-317 | EXCEPTION BACKUP_ACTIVE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-71",
+        "sources": [
+          "D04"
+        ]
+      },
+      "setting": {
+        "value": "S-335",
+        "sources": [
+          "D10"
+        ]
+      },
+      "exception": {
+        "value": "MAINTENANCE_MODE",
+        "sources": [
+          "D08"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-5a59154e2f",
+    "kind": "false-premise",
+    "question": "I was told R-72 is active for UNIT-5A5915. Verify its actual active revision, setting code, and exception code from the dossier.",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-5A5915-B | Revision R-36 | SETTING S-044",
+      "D02": "APPROVED exception | Unit UNIT-5A5915 | Revision R-36 | SETTING S-737 | EXCEPTION DURING_TEST_CYCLE",
+      "D03": "APPROVED assignment | Unit UNIT-5A5915 | Revision R-36",
+      "D04": "ARCHIVED assignment | Unit UNIT-5A5915 | Revision R-72",
+      "D05": "APPROVED setting | Unit UNIT-5A5915 | Revision R-72 | SETTING S-219",
+      "D06": "APPROVED setting | Unit UNIT-5A5915 | Revision R-36 | SETTING S-737",
+      "D07": "APPROVED exception | Unit UNIT-5A5915 | Revision R-72 | SETTING S-219 | EXCEPTION MAINTENANCE_MODE",
+      "D08": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence."
+    },
+    "gold": {
+      "revision": {
+        "value": "R-36",
+        "sources": [
+          "D03"
+        ]
+      },
+      "setting": {
+        "value": "S-737",
+        "sources": [
+          "D06"
+        ]
+      },
+      "exception": {
+        "value": "DURING_TEST_CYCLE",
+        "sources": [
+          "D02"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-a5aed77249",
+    "kind": "answerable",
+    "question": "Which revision is active for UNIT-A5AED7, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-A5AED7 | Revision R-06 | SETTING S-628",
+      "D02": "APPROVED setting | Unit UNIT-A5AED7 | Revision R-36 | SETTING S-663",
+      "D03": "APPROVED exception | Unit UNIT-A5AED7 | Revision R-36 | SETTING S-663 | EXCEPTION MAINTENANCE_MODE",
+      "D04": "ARCHIVED assignment | Unit UNIT-A5AED7 | Revision R-36",
+      "D05": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D06": "APPROVED exception | Unit UNIT-A5AED7 | Revision R-06 | SETTING S-628 | EXCEPTION DURING_INSPECTION",
+      "D07": "APPROVED setting | Unit UNIT-A5AED7-B | Revision R-06 | SETTING S-134",
+      "D08": "APPROVED assignment | Unit UNIT-A5AED7 | Revision R-06"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-06",
+        "sources": [
+          "D08"
+        ]
+      },
+      "setting": {
+        "value": "S-628",
+        "sources": [
+          "D01"
+        ]
+      },
+      "exception": {
+        "value": "DURING_INSPECTION",
+        "sources": [
+          "D06"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-3c44f93963",
+    "kind": "missing-answer",
+    "question": "Which revision is active for UNIT-3C44F9, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED exception | Unit UNIT-3C44F9 | Revision R-35 | SETTING S-254 | EXCEPTION BACKUP_ACTIVE",
+      "D02": "APPROVED setting | Unit UNIT-3C44F9 | Revision R-35 | SETTING S-254",
+      "D03": "APPROVED exception | Unit UNIT-3C44F9 | Revision R-15 | SETTING S-016 | EXCEPTION SENSOR_OFFLINE",
+      "D04": "APPROVED setting | Unit UNIT-3C44F9-B | Revision R-15 | SETTING S-375",
+      "D05": "APPROVED setting | Unit UNIT-3C44F9 | Revision R-15 | SETTING S-016",
+      "D06": "ARCHIVED assignment | Unit UNIT-3C44F9 | Revision R-35",
+      "D07": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence."
+    },
+    "gold": {
+      "revision": {
+        "value": null,
+        "sources": []
+      },
+      "setting": {
+        "value": null,
+        "sources": []
+      },
+      "exception": {
+        "value": null,
+        "sources": []
+      }
+    }
+  },
+  {
+    "id": "dossier-94f749a9a0",
+    "kind": "conflicting-record",
+    "question": "Which revision is active for UNIT-94F749, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-94F749 | Revision R-59 | SETTING S-048",
+      "D02": "APPROVED exception | Unit UNIT-94F749 | Revision R-59 | SETTING S-048 | EXCEPTION SENSOR_OFFLINE",
+      "D03": "PROVISIONAL setting | Unit UNIT-94F749 | Revision R-59 | SETTING S-538",
+      "D04": "ARCHIVED assignment | Unit UNIT-94F749 | Revision R-19",
+      "D05": "APPROVED exception | Unit UNIT-94F749 | Revision R-19 | SETTING S-203 | EXCEPTION AFTER_CALIBRATION",
+      "D06": "PROVISIONAL exception | Unit UNIT-94F749 | Revision R-59 | SETTING S-048 | EXCEPTION MAINTENANCE_MODE",
+      "D07": "APPROVED setting | Unit UNIT-94F749-B | Revision R-59 | SETTING S-538",
+      "D08": "APPROVED setting | Unit UNIT-94F749 | Revision R-19 | SETTING S-203",
+      "D09": "APPROVED assignment | Unit UNIT-94F749 | Revision R-59",
+      "D10": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D11": "PROVISIONAL assignment | Unit UNIT-94F749 | Revision R-19"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-59",
+        "sources": [
+          "D09"
+        ]
+      },
+      "setting": {
+        "value": "S-048",
+        "sources": [
+          "D01"
+        ]
+      },
+      "exception": {
+        "value": "SENSOR_OFFLINE",
+        "sources": [
+          "D02"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-490c1e5a63",
+    "kind": "false-premise",
+    "question": "I was told R-53 is active for UNIT-490C1E. Verify its actual active revision, setting code, and exception code from the dossier.",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-490C1E-B | Revision R-37 | SETTING S-726",
+      "D02": "APPROVED exception | Unit UNIT-490C1E | Revision R-53 | SETTING S-147 | EXCEPTION DURING_TEST_CYCLE",
+      "D03": "APPROVED setting | Unit UNIT-490C1E | Revision R-37 | SETTING S-781",
+      "D04": "ARCHIVED assignment | Unit UNIT-490C1E | Revision R-53",
+      "D05": "APPROVED assignment | Unit UNIT-490C1E | Revision R-37",
+      "D06": "APPROVED setting | Unit UNIT-490C1E | Revision R-53 | SETTING S-147",
+      "D07": "APPROVED exception | Unit UNIT-490C1E | Revision R-37 | SETTING S-781 | EXCEPTION AFTER_CALIBRATION",
+      "D08": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence."
+    },
+    "gold": {
+      "revision": {
+        "value": "R-37",
+        "sources": [
+          "D05"
+        ]
+      },
+      "setting": {
+        "value": "S-781",
+        "sources": [
+          "D03"
+        ]
+      },
+      "exception": {
+        "value": "AFTER_CALIBRATION",
+        "sources": [
+          "D07"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-101531cf03",
+    "kind": "conflicting-record",
+    "question": "Which revision is active for UNIT-101531, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "PROVISIONAL setting | Unit UNIT-101531 | Revision R-73 | SETTING S-883",
+      "D02": "APPROVED setting | Unit UNIT-101531 | Revision R-50 | SETTING S-825",
+      "D03": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D04": "PROVISIONAL assignment | Unit UNIT-101531 | Revision R-50",
+      "D05": "APPROVED assignment | Unit UNIT-101531 | Revision R-73",
+      "D06": "ARCHIVED assignment | Unit UNIT-101531 | Revision R-50",
+      "D07": "APPROVED exception | Unit UNIT-101531 | Revision R-73 | SETTING S-165 | EXCEPTION BACKUP_ACTIVE",
+      "D08": "PROVISIONAL exception | Unit UNIT-101531 | Revision R-73 | SETTING S-165 | EXCEPTION AFTER_CALIBRATION",
+      "D09": "APPROVED setting | Unit UNIT-101531 | Revision R-73 | SETTING S-165",
+      "D10": "APPROVED setting | Unit UNIT-101531-B | Revision R-73 | SETTING S-883",
+      "D11": "APPROVED exception | Unit UNIT-101531 | Revision R-50 | SETTING S-825 | EXCEPTION DURING_TEST_CYCLE"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-73",
+        "sources": [
+          "D05"
+        ]
+      },
+      "setting": {
+        "value": "S-165",
+        "sources": [
+          "D09"
+        ]
+      },
+      "exception": {
+        "value": "BACKUP_ACTIVE",
+        "sources": [
+          "D07"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-cbfd94130e",
+    "kind": "missing-answer",
+    "question": "Which revision is active for UNIT-CBFD94, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED assignment | Unit UNIT-CBFD94 | Revision R-65",
+      "D02": "APPROVED setting | Unit UNIT-CBFD94-B | Revision R-65 | SETTING S-290",
+      "D03": "APPROVED exception | Unit UNIT-CBFD94 | Revision R-58 | SETTING S-208 | EXCEPTION MANUAL_OVERRIDE",
+      "D04": "APPROVED exception | Unit UNIT-CBFD94 | Revision R-65 | SETTING S-508 | EXCEPTION AFTER_CALIBRATION",
+      "D05": "ARCHIVED assignment | Unit UNIT-CBFD94 | Revision R-58",
+      "D06": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D07": "APPROVED setting | Unit UNIT-CBFD94 | Revision R-58 | SETTING S-208"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-65",
+        "sources": [
+          "D01"
+        ]
+      },
+      "setting": {
+        "value": null,
+        "sources": []
+      },
+      "exception": {
+        "value": null,
+        "sources": []
+      }
+    }
+  },
+  {
+    "id": "dossier-2dc3292832",
+    "kind": "answerable",
+    "question": "Which revision is active for UNIT-2DC329, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "ARCHIVED assignment | Unit UNIT-2DC329 | Revision R-50",
+      "D02": "APPROVED exception | Unit UNIT-2DC329 | Revision R-06 | SETTING S-141 | EXCEPTION BACKUP_ACTIVE",
+      "D03": "APPROVED assignment | Unit UNIT-2DC329 | Revision R-06",
+      "D04": "APPROVED setting | Unit UNIT-2DC329 | Revision R-50 | SETTING S-270",
+      "D05": "APPROVED exception | Unit UNIT-2DC329 | Revision R-50 | SETTING S-270 | EXCEPTION MANUAL_OVERRIDE",
+      "D06": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D07": "APPROVED setting | Unit UNIT-2DC329 | Revision R-06 | SETTING S-141",
+      "D08": "APPROVED setting | Unit UNIT-2DC329-B | Revision R-06 | SETTING S-616"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-06",
+        "sources": [
+          "D03"
+        ]
+      },
+      "setting": {
+        "value": "S-141",
+        "sources": [
+          "D07"
+        ]
+      },
+      "exception": {
+        "value": "BACKUP_ACTIVE",
+        "sources": [
+          "D02"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-ae43da0eda",
+    "kind": "conflicting-record",
+    "question": "Which revision is active for UNIT-AE43DA, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D02": "PROVISIONAL exception | Unit UNIT-AE43DA | Revision R-07 | SETTING S-054 | EXCEPTION DURING_TEST_CYCLE",
+      "D03": "PROVISIONAL assignment | Unit UNIT-AE43DA | Revision R-51",
+      "D04": "APPROVED setting | Unit UNIT-AE43DA-B | Revision R-07 | SETTING S-068",
+      "D05": "APPROVED exception | Unit UNIT-AE43DA | Revision R-51 | SETTING S-372 | EXCEPTION AFTER_CALIBRATION",
+      "D06": "PROVISIONAL setting | Unit UNIT-AE43DA | Revision R-07 | SETTING S-068",
+      "D07": "APPROVED assignment | Unit UNIT-AE43DA | Revision R-07",
+      "D08": "ARCHIVED assignment | Unit UNIT-AE43DA | Revision R-51",
+      "D09": "APPROVED setting | Unit UNIT-AE43DA | Revision R-07 | SETTING S-054",
+      "D10": "APPROVED exception | Unit UNIT-AE43DA | Revision R-07 | SETTING S-054 | EXCEPTION SENSOR_OFFLINE",
+      "D11": "APPROVED setting | Unit UNIT-AE43DA | Revision R-51 | SETTING S-372"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-07",
+        "sources": [
+          "D07"
+        ]
+      },
+      "setting": {
+        "value": "S-054",
+        "sources": [
+          "D09"
+        ]
+      },
+      "exception": {
+        "value": "SENSOR_OFFLINE",
+        "sources": [
+          "D10"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-984604e1b0",
+    "kind": "false-premise",
+    "question": "I was told R-78 is active for UNIT-984604. Verify its actual active revision, setting code, and exception code from the dossier.",
+    "evidence": {
+      "D01": "APPROVED assignment | Unit UNIT-984604 | Revision R-29",
+      "D02": "APPROVED setting | Unit UNIT-984604 | Revision R-29 | SETTING S-301",
+      "D03": "APPROVED setting | Unit UNIT-984604-B | Revision R-29 | SETTING S-416",
+      "D04": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D05": "APPROVED exception | Unit UNIT-984604 | Revision R-78 | SETTING S-884 | EXCEPTION MANUAL_OVERRIDE",
+      "D06": "ARCHIVED assignment | Unit UNIT-984604 | Revision R-78",
+      "D07": "APPROVED setting | Unit UNIT-984604 | Revision R-78 | SETTING S-884",
+      "D08": "APPROVED exception | Unit UNIT-984604 | Revision R-29 | SETTING S-301 | EXCEPTION OVERNIGHT_ONLY"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-29",
+        "sources": [
+          "D01"
+        ]
+      },
+      "setting": {
+        "value": "S-301",
+        "sources": [
+          "D02"
+        ]
+      },
+      "exception": {
+        "value": "OVERNIGHT_ONLY",
+        "sources": [
+          "D08"
+        ]
+      }
+    }
+  },
+  {
+    "id": "dossier-ea8a4c88f9",
+    "kind": "missing-answer",
+    "question": "Which revision is active for UNIT-EA8A4C, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED assignment | Unit UNIT-EA8A4C | Revision R-03",
+      "D02": "APPROVED setting | Unit UNIT-EA8A4C-B | Revision R-03 | SETTING S-650",
+      "D03": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence.",
+      "D04": "APPROVED setting | Unit UNIT-EA8A4C | Revision R-03 | SETTING S-302",
+      "D05": "APPROVED exception | Unit UNIT-EA8A4C | Revision R-64 | SETTING S-477 | EXCEPTION MAINTENANCE_MODE",
+      "D06": "APPROVED setting | Unit UNIT-EA8A4C | Revision R-64 | SETTING S-477",
+      "D07": "ARCHIVED assignment | Unit UNIT-EA8A4C | Revision R-64"
+    },
+    "gold": {
+      "revision": {
+        "value": "R-03",
+        "sources": [
+          "D01"
+        ]
+      },
+      "setting": {
+        "value": "S-302",
+        "sources": [
+          "D04"
+        ]
+      },
+      "exception": {
+        "value": null,
+        "sources": []
+      }
+    }
+  },
+  {
+    "id": "dossier-30cebf2500",
+    "kind": "answerable",
+    "question": "Which revision is active for UNIT-30CEBF, and what are its setting and exception codes?",
+    "evidence": {
+      "D01": "APPROVED setting | Unit UNIT-30CEBF | Revision R-10 | SETTING S-113",
+      "D02": "APPROVED exception | Unit UNIT-30CEBF | Revision R-10 | SETTING S-113 | EXCEPTION DURING_TEST_CYCLE",
+      "D03": "ARCHIVED assignment | Unit UNIT-30CEBF | Revision R-51",
+      "D04": "APPROVED setting | Unit UNIT-30CEBF-B | Revision R-10 | SETTING S-789",
+      "D05": "APPROVED setting | Unit UNIT-30CEBF | Revision R-51 | SETTING S-646",
+      "D06": "APPROVED exception | Unit UNIT-30CEBF | Revision R-51 | SETTING S-646 | EXCEPTION AFTER_CALIBRATION",
+      "D07": "APPROVED assignment | Unit UNIT-30CEBF | Revision R-10",
+      "D08": "For current revision assignments, setting codes, and exception codes, use APPROVED records. PROVISIONAL and ARCHIVED records cannot establish current values. Match the requested unit exactly. Setting codes depend on unit and active revision. Exception codes depend on unit, active revision, and setting. If a required approved record or upstream value is absent, report insufficient evidence."
+    },
+    "gold": {
+      "revision": {
+        "value": "R-10",
+        "sources": [
+          "D07"
+        ]
+      },
+      "setting": {
+        "value": "S-113",
+        "sources": [
+          "D01"
+        ]
+      },
+      "exception": {
+        "value": "DURING_TEST_CYCLE",
+        "sources": [
+          "D02"
+        ]
+      }
+    }
+  }
+]

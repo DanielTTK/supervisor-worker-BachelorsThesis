@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\begin{document}
+\section*{Results: comparison-smoke}
+\begin{itemize}
+\item \textbf{Status:} Run marked complete. Scripted smoke-test data is not model evidence.
+\item \textbf{Backend:} scripted\_smoke\_only
+\item \textbf{Cases:} 12
+\item \textbf{Worker model:} qwen3:1.7b-q4\_K\_M
+\item \textbf{Supervisor model:} qwen3:8b-q4\_K\_M
+\end{itemize}
+\subsection*{End-to-end results}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXXX}
+\toprule
+Metric & Workers only & Generic review & Custom review \\
+\midrule
+Exact final answers & 0.0\% (0/12) & 0.0\% (0/12) & 0.0\% (0/12) \\
+Final hallucinations & 100.0\% (36/36) & 100.0\% (24/24) & 100.0\% (24/24) \\
+Final case errors & 100.0\% (12/12) & 100.0\% (12/12) & 100.0\% (12/12) \\
+Final answer coverage & 100.0\% (30/30) & 63.3\% (19/30); 95\% CI 56.5--66.7\% & 63.3\% (19/30); 95\% CI 56.5--66.7\% \\
+Worker hallucinations & 100.0\% (36/36) & 100.0\% (36/36) & 100.0\% (36/36) \\
+Worker failures & 0.0\% (0/36) & 0.0\% (0/36) & 0.0\% (0/36) \\
+Reviewer misses & N/A & 33.3\% (12/36) & 33.3\% (12/36) \\
+Worker errors escaping review & N/A & 33.3\% (12/36) & 33.3\% (12/36) \\
+Verified reviewer repairs & N/A & 0.0\% (0/36) & 0.0\% (0/36) \\
+Supervisor-originated hallucinations & undefined (0/0) & 100.0\% (12/12) & 100.0\% (12/12) \\
+Synthesis failures & 0.0\% (0/12) & 0.0\% (0/12) & 0.0\% (0/12) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\subsection*{Reviewer replay (same saved inputs)}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Metric & Generic review & Custom review \\
+\midrule
+Reviewer catch recall & 66.7\% (24/36) & 66.7\% (24/36) \\
+Reviewer misses & 33.3\% (12/36) & 33.3\% (12/36) \\
+Reviewer false alarms & undefined (0/0) & undefined (0/0) \\
+Verified reviewer repairs & 0.0\% (0/36) & 0.0\% (0/36) \\
+Reviewer-originated hallucinations & 100.0\% (12/12) & 100.0\% (12/12) \\
+Reviewer failures & 0.0\% (0/36) & 0.0\% (0/36) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\subsection*{Paired differences}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Metric & Comparison & Delta \\
+\midrule
+Final hallucinations & Generic review - Workers only & +0.0 pp (24/24 vs 36/36) \\
+Final case errors & Generic review - Workers only & +0.0 pp (12/12 vs 12/12) \\
+Exact final answers & Generic review - Workers only & +0.0 pp (0/12 vs 0/12) \\
+Final hallucinations & Custom review - Generic review & +0.0 pp (24/24 vs 24/24) \\
+Final case errors & Custom review - Generic review & +0.0 pp (12/12 vs 12/12) \\
+Exact final answers & Custom review - Generic review & +0.0 pp (0/12 vs 0/12) \\
+Final hallucinations & Custom review - Workers only & +0.0 pp (24/24 vs 36/36) \\
+Final case errors & Custom review - Workers only & +0.0 pp (12/12 vs 12/12) \\
+Exact final answers & Custom review - Workers only & +0.0 pp (0/12 vs 0/12) \\
+Reviewer misses & Custom review - Generic review & +0.0 pp (12/36 vs 12/36) \\
+Reviewer false alarms & Custom review - Generic review & undefined (0/0 vs 0/0) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\noindent Rates show numerator/denominator. Confidence intervals are 95\% case-clustered bootstrap intervals when available.
+\par End-to-end results and reviewer replay are separate experiments. Detailed case-type and worker-field breakdowns remain in \texttt{summary.csv}.
+\end{document}

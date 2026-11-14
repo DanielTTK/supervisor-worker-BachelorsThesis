@@ -1,0 +1,5 @@
+{
+  "backend": "ollama",
+  "bootstrap_samples": 2000,
+  "scorer_sha256": "3169be2ac5c463185bc2422bbd19c428b978f05160acbbe73659dc5c5cbc3cfd"
+}

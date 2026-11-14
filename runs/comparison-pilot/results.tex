@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\begin{document}
+\section*{Results: comparison-pilot}
+\begin{itemize}
+\item \textbf{Status:} Run marked complete.
+\item \textbf{Backend:} ollama
+\item \textbf{Cases:} 24
+\item \textbf{Worker model:} qwen3:1.7b-q4\_K\_M
+\item \textbf{Supervisor model:} qwen3:8b-q4\_K\_M
+\end{itemize}
+\subsection*{End-to-end results}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXXX}
+\toprule
+Metric & Workers only & Generic review & Custom review \\
+\midrule
+Exact final answers & 8.3\% (2/24); 95\% CI 0.0--20.8\% & 12.5\% (3/24); 95\% CI 0.0--25.0\% & 12.5\% (3/24); 95\% CI 0.0--25.0\% \\
+Final hallucinations & 54.9\% (39/71); 95\% CI 37.1--71.8\% & 52.1\% (37/71); 95\% CI 33.8--69.0\% & 50.0\% (36/72); 95\% CI 31.9--68.1\% \\
+Final case errors & 66.7\% (16/24); 95\% CI 45.8--83.3\% & 62.5\% (15/24); 95\% CI 41.7--79.2\% & 58.3\% (14/24); 95\% CI 37.5--75.0\% \\
+Final answer coverage & 98.3\% (59/60); 95\% CI 94.6--100.0\% & 98.3\% (59/60); 95\% CI 94.6--100.0\% & 100.0\% (60/60) \\
+Worker hallucinations & 58.3\% (42/72); 95\% CI 43.1--73.6\% & 59.7\% (43/72); 95\% CI 44.4--75.0\% & 59.7\% (43/72); 95\% CI 44.4--75.0\% \\
+Worker failures & 0.0\% (0/72) & 0.0\% (0/72) & 0.0\% (0/72) \\
+Reviewer misses & N/A & 62.8\% (27/43); 95\% CI 45.2--79.4\% & 46.5\% (20/43); 95\% CI 30.0--61.2\% \\
+Worker errors escaping review & N/A & 62.8\% (27/43); 95\% CI 45.2--79.4\% & 46.5\% (20/43); 95\% CI 30.0--61.2\% \\
+Verified reviewer repairs & N/A & 0.0\% (0/43) & 0.0\% (0/43) \\
+Supervisor-originated hallucinations & 62.5\% (5/8); 95\% CI 25.0--100.0\% & 50.0\% (12/24); 95\% CI 25.0--76.9\% & 62.1\% (18/29); 95\% CI 40.7--83.3\% \\
+Synthesis failures & 0.0\% (0/24) & 0.0\% (0/24) & 0.0\% (0/24) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\subsection*{Reviewer replay (same saved inputs)}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Metric & Generic review & Custom review \\
+\midrule
+Reviewer catch recall & 33.3\% (14/42); 95\% CI 18.6--50.0\% & 59.5\% (25/42); 95\% CI 43.5--76.3\% \\
+Reviewer misses & 66.7\% (28/42); 95\% CI 50.0--81.4\% & 40.5\% (17/42); 95\% CI 23.7--56.5\% \\
+Reviewer false alarms & 0.0\% (0/20) & 15.0\% (3/20); 95\% CI 0.0--36.4\% \\
+Verified reviewer repairs & 0.0\% (0/42) & 0.0\% (0/42) \\
+Reviewer-originated hallucinations & undefined (0/0) & 100.0\% (1/1) \\
+Reviewer failures & 0.0\% (0/72) & 0.0\% (0/72) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\subsection*{Paired differences}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Metric & Comparison & Delta \\
+\midrule
+Final hallucinations & Generic review - Workers only & -2.8 pp (37/71 vs 39/71); 95\% CI -10.1 to +2.8 pp \\
+Final case errors & Generic review - Workers only & -4.2 pp (15/24 vs 16/24); 95\% CI -12.5 to +0.0 pp \\
+Exact final answers & Generic review - Workers only & +4.2 pp (3/24 vs 2/24); 95\% CI +0.0 to +12.5 pp \\
+Final hallucinations & Custom review - Generic review & -2.1 pp (36/72 vs 37/71); 95\% CI -6.7 to +0.0 pp \\
+Final case errors & Custom review - Generic review & -4.2 pp (14/24 vs 15/24); 95\% CI -12.5 to +0.0 pp \\
+Exact final answers & Custom review - Generic review & +0.0 pp (3/24 vs 3/24) \\
+Final hallucinations & Custom review - Workers only & -4.9 pp (36/72 vs 39/71); 95\% CI -13.3 to +1.4 pp \\
+Final case errors & Custom review - Workers only & -8.3 pp (14/24 vs 16/24); 95\% CI -20.8 to +0.0 pp \\
+Exact final answers & Custom review - Workers only & +4.2 pp (3/24 vs 2/24); 95\% CI +0.0 to +12.5 pp \\
+Reviewer misses & Custom review - Generic review & -26.2 pp (17/42 vs 28/42); 95\% CI -37.5 to -14.6 pp \\
+Reviewer false alarms & Custom review - Generic review & +15.0 pp (3/20 vs 0/20); 95\% CI +0.0 to +36.4 pp \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\noindent Rates show numerator/denominator. Confidence intervals are 95\% case-clustered bootstrap intervals when available.
+\par End-to-end results and reviewer replay are separate experiments. Detailed case-type and worker-field breakdowns remain in \texttt{summary.csv}.
+\end{document}

@@ -1,0 +1,69 @@
+{
+  "backend": "ollama",
+  "inference": {
+    "worker": "qwen3:1.7b-q4_K_M",
+    "supervisor": "qwen3:8b-q4_K_M",
+    "seed": 101,
+    "num_ctx": 4096,
+    "num_predict": 256
+  },
+  "runtime": {
+    "backend": "ollama",
+    "version": "0.40.16",
+    "models": {
+      "qwen3:1.7b-q4_K_M": {
+        "name": "qwen3:1.7b-q4_K_M",
+        "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "2.0B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 40960,
+          "embedding_length": 2048,
+          "runner": "ggml"
+        },
+        "size_bytes": 1359293444
+      },
+      "qwen3:8b-q4_K_M": {
+        "name": "qwen3:8b-q4_K_M",
+        "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "8.2B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 40960,
+          "embedding_length": 4096,
+          "runner": "ggml"
+        },
+        "size_bytes": 5225388164
+      }
+    },
+    "temperature": 0.0,
+    "think": false,
+    "keep_alive": "5m"
+  },
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cases": 24,
+  "injected_pairs": 6,
+  "controls": true,
+  "keep_alive": "5m",
+  "timeout": 300,
+  "dataset_sha256": "ef0958c014603bd26f781873acc69da662236f9e4f2ed2ac4b00d0e48f059dd0",
+  "code_sha256": {
+    "fixtures.py": "de0f25fb676a4289df5b26ba3fa37eae0d4704977fa61ffabb49ec63314953b4",
+    "models.py": "5a27efd8c823357b2415d5f795f5db18b7d2efabcb5b52b141cff4f4e97470d1",
+    "pipeline.py": "83e9bf40bad3d5c85231da8a3b433a71c78d5cd1f6dedad1048074b1afe494fa",
+    "thesis.py": "f3715840fc66299dc99e44da1126094b35ddd1b0485f01ad9ccdfa4a59b3f54b"
+  }
+}
