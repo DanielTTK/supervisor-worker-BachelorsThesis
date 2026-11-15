@@ -75,6 +75,9 @@ python -B thesis.py score --out runs/comparison-thesis
 
 # Write readable Markdown and LaTeX reports for one or more runs
 python -B report_results.py runs/comparison-pilot runs/comparison-smoke
+
+# Run with stronger supervisor
+python -B thesis.py run --out runs/comparison-thesis-14b --cases 300 --seed 2026 --worker qwen3:1.7b-q4_K_M --supervisor qwen3:14b-q4_K_M
 ```
 
 Each run produces all three end-to-end conditions and their matched reviewer replay. The 300-case command schedules up to **6,600 model calls** after reusing the common first worker call. Use the pilot's time, natural error count, and failure rates to plan the held-out run. Check the longest Custom replay inputs against the common context budget before freezing settings. Earlier runs such as `runs/pilot` use a different design with legacy arm labels. They can still be rescored offline. Use a new output directory for the three-condition study.
